@@ -11,13 +11,13 @@ const shouldHit = require('blackjack/should-hit');
 const selectAction = require('blackjack/select-action');
 
 test('A bot knows a card value', (assert) => {
-  const ace = cardValue('ace');
+  const ace = cardValue('11');
   const five = cardValue('5');
   const nine = cardValue('9');
   const ten = cardValue('10');
   const jack = cardValue('jack');
   const queen = cardValue('queen');
-  const king = cardValue('queen');
+  const king = cardValue('king');
 
   assert.equal(ace, 11, 'A bot should know "ace" is equal to 11');
   assert.equal(five, 5, 'A bot should know "5" is equal to 5');
