@@ -8,6 +8,10 @@ const sameFirst = require('array-helpers/same-first');
 const deepEquals = require('array-helpers/deep-equals');
 const arraySum = require('array-helpers/array-sum');
 
+test('free test', (assert) => {
+  assert.ok(true);
+});
+
 test('It can check first values', (assert) => {
   const a = sameFirst(['b', true], ['b', true]);
   const b = sameFirst(['b', true], ['b', false]);
