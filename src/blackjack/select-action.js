@@ -5,6 +5,9 @@ export default function selectAction(cardA, cardB) {
   if (shouldHit(cardA, cardB)) {
     return 'hit';
   }
-   if (shouldSplit(cardA, cardB)) {
+  if (shouldSplit(cardA, cardB)) {
     return 'split';
+  }
+
+  return 'stay';
 }
